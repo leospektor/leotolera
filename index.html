@@ -12,14 +12,15 @@
             background-color: white;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-            cursor: pointer;
+            align-items: start;
+            min-height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto; /* Включает скролл, если изображение выше экрана */
         }
         img {
-            max-width: 100%;
-            max-height: 100%;
+            width: 100vw; /* Растягиваем на всю ширину экрана */
+            height: auto; /* Сохраняем пропорции */
+            display: block; /* Убираем лишние отступы */
         }
     </style>
 </head>
